@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+   PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+   <hibernate-mapping>
+    <class name="com.pizza.bean.Customer" table="customer">
+    <id name="custId" column="customerId" type="integer">
+    <generator class="native"></generator>
+    </id>
+   <property name="custName" column="custname" type="java.lang.String"></property>
+    <property name="address" column="addr" type="string" ></property>
+     <property name="phone" column="phone" type="string" ></property>
+    </class>
+    
+    
+   </hibernate-mapping>

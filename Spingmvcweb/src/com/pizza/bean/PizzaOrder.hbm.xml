@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+   PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+   <hibernate-mapping>
+   <class name="com.pizza.bean.PizzaOrder" table="PizzaOrder">
+    <id name="orderId" column="orderId" type="integer">
+    <generator class="native"></generator>
+    </id>
+   <property name="customerId" column="customerId" type="integer" ></property>
+   <property name="totalPrice" column="price" type="double"></property>
+    </class>
+    
+    
+   </hibernate-mapping>
